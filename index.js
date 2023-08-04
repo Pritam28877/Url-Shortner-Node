@@ -1,5 +1,6 @@
 const express = require("express");
 const urlRoute = require("./router/urlRoutes");
+const db = require ('./config/mongodb')
 const app = express();
 const port = 5000 ;
 
