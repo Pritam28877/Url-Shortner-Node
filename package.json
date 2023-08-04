@@ -20,7 +20,9 @@
   "homepage": "https://github.com/Pritam28877/Url-Shortner-Node#readme",
   "dependencies": {
     "express": "^4.18.2",
-    "mongoose": "^7.4.2"
+    "mongoose": "^7.4.2",
+    "nanoid": "^4.0.2",
+    "shortid": "^2.2.16"
   },
   "devDependencies": {
     "nodemon": "^3.0.1"
