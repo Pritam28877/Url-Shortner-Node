@@ -5,14 +5,18 @@ const db = require ('./config/mongodb')
 const app = express();
 const port = 5000 ;
 
-
+// middleware for the project in the projecet 
 app.use(express.json());
 
+
+// the route and the send the responce 
 app.get('/',(req , res)=>{
     res.send("hello");
 })
 app.use("/url", urlRoute)
 
+
+// the logic to redirect the given shot url and the tampstap
 app.get('/:shortId',async(req,res)=>{
     const shortId = req.params.shortId;
     const entry = await URL.findOneAndUpdate(
